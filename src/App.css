@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.App {
+	height: 100vh;
+}
+li {
+	list-style-type: none;
+}
+.signInSection {
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	display: flex;
+	align-items: center;
+}
+.logInLeft,
+.signInLeft {
+	width: 50%;
+	height: 100%;
+	background: #c9ac8c;
+	position: relative;
+}
+.logInLeftImg,
+.signInLeftImg {
+	width: 70%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+.logInRight,
+.signInRight {
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	position: relative;
+}
+
+.logInForm,
+.signInForm {
+	width: 70%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+.logInTitle,
+.signInTitle {
+	color: #000;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+.questionText {
+	color: #000;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 20px;
+	font-family: "Open Sans", sans-serif;
+}
+.innerQuestionText {
+	color: #549ff9;
+	cursor: pointer;
+}
+
+.FormInput,
+.logBtn {
+	display: block;
+	width: 80%;
+	height: 46px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	padding: 5px 20px;
+	border: 1px solid #b4b4bb;
+	background: #ffffff;
+	margin-bottom: 20px;
+}
+
+.logBtn {
+	cursor: pointer;
+	border-radius: 99px;
+	background: #152540;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.card-list {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+}
+.card-item {
+	width: 150px;
+	margin: 5px;
+	border-radius: 15px;
+	text-align: center;
+	border: 1px solid #cccccc23;
+}
+.card-item:hover {
+	cursor: pointer;
+	scale: 0.9;
+	transition: 0.5s;
+}
+.card-img {
+	width: 100%;
+}
+.card-name {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	height: 45px;
+}
+.card-years {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 10px auto;
+	line-height: norma l;
+}
+.books {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px auto;
+	align-items: center;
+}
+.bxs-book,
+.bx-headphone,
+.audioBook,
+.book-number {
+	color: #000;
+}
+.bxs-book,
+.bx-headphone {
+	margin-right: 5px;
+}
+
+.book-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+
+	.card-item {
+		min-width: 400px;
+		margin-bottom: 30px;
+		&:hover {
+			scale: 1;
+		}
+		.action-area {
+			width: 50%;
+			margin: 10px auto;
+			display: flex;
+			justify-content: space-between;
+      &:hover{
+        background-color: #fff ;
+      }
+		}
+	}
+}
+
+@media screen and (max-width: 805px) {
+	.book-list {
+		.card-item {
+			margin: 25px auto;
+		}
+	}
+}
